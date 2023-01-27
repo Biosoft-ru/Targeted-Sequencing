@@ -1,0 +1,45 @@
+files:
+- name: inputs.json
+  transformer: ru.biosoft.access.support.FileTextTransformer
+- name: options.json
+  transformer: ru.biosoft.access.support.FileTextTransformer
+- name: Results
+  properties:
+    analysis.class: biouml.plugins.wdl.RunWDLAnalysis$Parameters
+    analysis.inputStyle: params
+    analysis.outFolder: data/Collaboration/Sequencer examples/Targeted Sequencing/Results
+    analysisName: Run WDL
+    analysis.includes: '["biouml.plugins.wdl.RunWDLAnalysis$IncludePath@8701a23"]'
+    analysisParametersDescription: '<div><b>Parameters:</b><br><ul type="circle"><li><b>wdlScriptPath</b>:
+      <a href="de:data%2FCollaboration%2FSequencer+examples%2FTargeted+Sequencing%2FTargeted_sequencing_workflow.wdl"
+      title="data/Collaboration/Sequencer examples/Targeted Sequencing/Targeted_sequencing_workflow.wdl">Targeted_sequencing_workflow.wdl</a></li><li><b>Includes</b><ul><li><b>[0]</b><ul><li><b>path</b>:
+      <a href="de:data%2FCollaboration%2FSequencer+examples%2FTargeted+Sequencing"
+      title="data/Collaboration/Sequencer examples/Targeted Sequencing">Targeted Sequencing</a></li><li><b>recursive</b>:
+      true</li></ul></li></ul></li><li><b>inputStyle</b> (expert): params</li><li><b>bioumlParams</b><ul><li><b>targeted_sequencing.bait_bed</b>:
+      <a href="de:data%2FCollaboration%2FSequencer+examples%2FTargeted+Sequencing%2FInput%2Fchr1.bed"
+      title="data/Collaboration/Sequencer examples/Targeted Sequencing/Input/chr1.bed">chr1.bed</a></li><li><b>targeted_sequencing.regions_pbsv</b><ul><li><b>[0]</b><ul><li><b>targeted_sequencing.regions_pbsv</b>:
+      chr1</li></ul></li></ul></li><li><b>targeted_sequencing.gene_bed</b>: <a href="de:data%2FCollaboration%2FSequencer+examples%2FTargeted+Sequencing%2FInput%2FCACNA1S.bed"
+      title="data/Collaboration/Sequencer examples/Targeted Sequencing/Input/CACNA1S.bed">CACNA1S.bed</a></li><li><b>targeted_sequencing.bam</b>:
+      <a href="de:data%2FCollaboration%2FSequencer+examples%2FTargeted+Sequencing%2FInput%2Ftest_data.chr1.bam"
+      title="data/Collaboration/Sequencer examples/Targeted Sequencing/Input/test_data.chr1.bam">test_data.chr1.bam</a></li><li><b>targeted_sequencing.ref_fasta</b>:
+      <a href="de:data%2FCollaboration%2FSequencer+examples%2FTargeted+Sequencing%2FInput%2Fhuman_GRCh38_no_alt_analysis_set.fasta"
+      title="data/Collaboration/Sequencer examples/Targeted Sequencing/Input/human_GRCh38_no_alt_analysis_set.fasta">human_GRCh38_no_alt_analysis_set.fasta</a></li><li><b>targeted_sequencing.primers_fasta</b>:
+      <a href="de:data%2FCollaboration%2FSequencer+examples%2FTargeted+Sequencing%2FInput%2FTwist_Universal_Adapter_System_384.fasta"
+      title="data/Collaboration/Sequencer examples/Targeted Sequencing/Input/Twist_Universal_Adapter_System_384.fasta">Twist_Universal_Adapter_System_384.fasta</a></li><li><b>targeted_sequencing.lima_bool</b>:
+      false</li><li><b>targeted_sequencing.regions_deepvariant</b>: chr1</li><li><b>targeted_sequencing.region_fasta</b>:
+      <a href="de:data%2FCollaboration%2FSequencer+examples%2FTargeted+Sequencing%2FInput%2Fchr1.fa"
+      title="data/Collaboration/Sequencer examples/Targeted Sequencing/Input/chr1.fa">chr1.fa</a></li><li><b>targeted_sequencing.tr_bed</b>:
+      <a href="de:data%2FCollaboration%2FSequencer+examples%2FTargeted+Sequencing%2FInput%2Fhg38.trf.bed"
+      title="data/Collaboration/Sequencer examples/Targeted Sequencing/Input/hg38.trf.bed">hg38.trf.bed</a></li></ul></li><li><b>Workflow
+      options</b> (expert): (none)</li><li><b>outFolder</b>: <a href="de:data%2FCollaboration%2FSequencer+examples%2FTargeted+Sequencing%2FResults"
+      title="data/Collaboration/Sequencer examples/Targeted Sequencing/Results">Results</a></li></ul></div>'
+    analysis.bioumlParams: '[{"name":"targeted_sequencing.bait_bed","type":"ru.biosoft.access.core.DataElementPath","value":"data/Collaboration/Sequencer
+      examples/Targeted Sequencing/Input/chr1.bed","bound":false,"constrained":false,"displayName":"targeted_sequencing.bait_bed","expert":false,"hidden":false,"preffered":false,"propertyEditorClass":null,"shortDescription":"targeted_sequencing.bait_bed","attributes":{"isInput":"true","can-be-null":"false"}},{"name":"targeted_sequencing.regions_pbsv","type":"[Lcom.developmentontheedge.beans.DynamicPropertySet;","value":"[\"[{\\\"name\\\":\\\"targeted_sequencing.regions_pbsv\\\",\\\"type\\\":\\\"java.lang.String\\\",\\\"value\\\":\\\"chr1\\\",\\\"bound\\\":false,\\\"constrained\\\":false,\\\"displayName\\\":\\\"targeted_sequencing.regions_pbsv\\\",\\\"expert\\\":false,\\\"hidden\\\":false,\\\"preffered\\\":false,\\\"propertyEditorClass\\\":null,\\\"shortDescription\\\":\\\"targeted_sequencing.regions_pbsv\\\",\\\"attributes\\\":{\\\"can-be-null\\\":\\\"false\\\"}}]\"]","bound":false,"constrained":false,"displayName":"targeted_sequencing.regions_pbsv","expert":false,"hidden":false,"preffered":false,"propertyEditorClass":null,"shortDescription":"targeted_sequencing.regions_pbsv","attributes":{"wdl-type":"array","can-be-null":"false","item-prototype":"DPS(com.developmentontheedge.beans.DynamicPropertySetSupport):\n  1.
+      targeted_sequencing.regions_pbsv (class java.lang.String) - null"}},{"name":"targeted_sequencing.gene_bed","type":"ru.biosoft.access.core.DataElementPath","value":"data/Collaboration/Sequencer
+      examples/Targeted Sequencing/Input/CACNA1S.bed","bound":false,"constrained":false,"displayName":"targeted_sequencing.gene_bed","expert":false,"hidden":false,"preffered":false,"propertyEditorClass":null,"shortDescription":"targeted_sequencing.gene_bed","attributes":{"isInput":"true","can-be-null":"false"}},{"name":"targeted_sequencing.bam","type":"ru.biosoft.access.core.DataElementPath","value":"data/Collaboration/Sequencer
+      examples/Targeted Sequencing/Input/test_data.chr1.bam","bound":false,"constrained":false,"displayName":"targeted_sequencing.bam","expert":false,"hidden":false,"preffered":false,"propertyEditorClass":null,"shortDescription":"targeted_sequencing.bam","attributes":{"isInput":"true","can-be-null":"false"}},{"name":"targeted_sequencing.ref_fasta","type":"ru.biosoft.access.core.DataElementPath","value":"data/Collaboration/Sequencer
+      examples/Targeted Sequencing/Input/human_GRCh38_no_alt_analysis_set.fasta","bound":false,"constrained":false,"displayName":"targeted_sequencing.ref_fasta","expert":false,"hidden":false,"preffered":false,"propertyEditorClass":null,"shortDescription":"targeted_sequencing.ref_fasta","attributes":{"isInput":"true","can-be-null":"false"}},{"name":"targeted_sequencing.primers_fasta","type":"ru.biosoft.access.core.DataElementPath","value":"data/Collaboration/Sequencer
+      examples/Targeted Sequencing/Input/Twist_Universal_Adapter_System_384.fasta","bound":false,"constrained":false,"displayName":"targeted_sequencing.primers_fasta","expert":false,"hidden":false,"preffered":false,"propertyEditorClass":null,"shortDescription":"targeted_sequencing.primers_fasta","attributes":{"isInput":"true","can-be-null":"false"}},{"name":"targeted_sequencing.lima_bool","type":"java.lang.String","value":"false","bound":false,"constrained":false,"displayName":"targeted_sequencing.lima_bool","expert":false,"hidden":false,"preffered":false,"propertyEditorClass":null,"shortDescription":"targeted_sequencing.lima_bool","attributes":{"can-be-null":"false"}},{"name":"targeted_sequencing.regions_deepvariant","type":"java.lang.String","value":"chr1","bound":false,"constrained":false,"displayName":"targeted_sequencing.regions_deepvariant","expert":false,"hidden":false,"preffered":false,"propertyEditorClass":null,"shortDescription":"targeted_sequencing.regions_deepvariant","attributes":{"can-be-null":"false"}},{"name":"targeted_sequencing.region_fasta","type":"ru.biosoft.access.core.DataElementPath","value":"data/Collaboration/Sequencer
+      examples/Targeted Sequencing/Input/chr1.fa","bound":false,"constrained":false,"displayName":"targeted_sequencing.region_fasta","expert":false,"hidden":false,"preffered":false,"propertyEditorClass":null,"shortDescription":"targeted_sequencing.region_fasta","attributes":{"isInput":"true","can-be-null":"false"}},{"name":"targeted_sequencing.tr_bed","type":"ru.biosoft.access.core.DataElementPath","value":"data/Collaboration/Sequencer
+      examples/Targeted Sequencing/Input/hg38.trf.bed","bound":false,"constrained":false,"displayName":"targeted_sequencing.tr_bed","expert":false,"hidden":false,"preffered":false,"propertyEditorClass":null,"shortDescription":"targeted_sequencing.tr_bed","attributes":{"isInput":"true","can-be-null":"false"}}]'
+    analysis.wdlScriptPath: data/Collaboration/Sequencer examples/Targeted Sequencing/Targeted_sequencing_workflow.wdl

@@ -1,0 +1,12 @@
+{
+	"targeted_sequencing.primers_fasta":"Twist_Universal_Adapter_System_384.fasta",
+	"targeted_sequencing.ref_fasta":"human_GRCh38_no_alt_analysis_set.fasta",
+	"targeted_sequencing.bam":"chr1.bam",
+	"targeted_sequencing.tr_bed":"hg38.trf.bed",
+	"targeted_sequencing.regions_pbsv":["chr1"],
+	"targeted_sequencing.regions_deepvariant":"chr1",
+	"targeted_sequencing.gene_bed":"CACNA1S.bed",
+	"targeted_sequencing.region_fasta":"chr1.fa",
+	"targeted_sequencing.bait_bed":"chr1.bed",
+	"targeted_sequencing.lima_bool":"false"
+}

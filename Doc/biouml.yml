@@ -1,0 +1,3 @@
+files:
+- name: target_seq.md
+  transformer: ru.biosoft.access.support.FileTextTransformer
